@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Electronics</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='appliances.css')}}">
+</head>
+<body>
+  <div class="appliance">
+    <h5>Electronics</h5>
+
+    <div>
+      <p class="overlay">Specifications</p>
+      <img src="{{url_for('static', filename='images/electronic.jpg')}}" alt="electronics.jpg">
+      <form action="{{ url_for('add_to_cart') }}" method="POST">
+        <input type="hidden" name="item" value="Electronic Item 1">
+        <button type="submit">Add to Cart</button>
+      </form>
+    </div>
+
+    <div>
+      <p class="overlay">Specifications</p>
+      <img src="{{url_for('static', filename='images/electronic1.jpg')}}" alt="electronics1.jpg">
+      <form action="{{ url_for('add_to_cart') }}" method="POST">
+        <input type="hidden" name="item" value="Electronic Item 2">
+        <button type="submit">Add to Cart</button>
+      </form>
+    </div>
+
+    <div>
+      <p class="overlay">Specifications</p>
+      <img src="{{url_for('static', filename='images/electronic2.jpg')}}" alt="electronics2.jpg">
+      <form action="{{ url_for('add_to_cart') }}" method="POST">
+        <input type="hidden" name="item" value="Electronic Item 3">
+        <button type="submit">Add to Cart</button>
+      </form>
+    </div>
+
+    <div>
+      <p class="overlay">Specifications</p>
+      <img src="{{url_for('static', filename='images/electronic3.jpg')}}" alt="electronics3.jpg">
+      <form action="{{ url_for('add_to_cart') }}" method="POST">
+        <input type="hidden" name="item" value="Electronic Item 4">
+        <button type="submit">Add to Cart</button>
+      </form>
+    </div>
+
+    <div>
+      <p class="overlay">Specifications</p>
+      <img src="{{url_for('static', filename='images/electronic4.jpg')}}" alt="electronics4.jpg">
+      <form action="{{ url_for('add_to_cart') }}" method="POST">
+        <input type="hidden" name="item" value="Electronic Item 5">
+        <button type="submit">Add to Cart</button>
+      </form>
+    </div>
+
+    <a href="{{url_for('cart')}}">View Cart</a>
+
+  </div>
+</body>
+</html>

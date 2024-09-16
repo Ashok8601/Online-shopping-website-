@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Personal Care Products</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='appliances.css')}}">
+</head>
+<body>
+  <div class="appliance">
+    <h5>Explore Personal Care</h5>
+    
+    <div class="product-item">
+      <p class="overlay">Specifications</p>
+      <a href="{{url_for('buy')}}">
+        <img src="{{url_for('static', filename='images/personal.jpg')}}" alt="Personal Care Product 1">
+        <span>Buy Now</span>
+      </a>
+      <form action="{{url_for('add_to_cart')}}" method="POST">
+        <input type="hidden" name="item_id" value="personal1">
+        <button type="submit">Add to Cart</button>
+      </form>
+    </div>
+    
+    <div class="product-item">
+      <p class="overlay">Specifications</p>
+      <a href="{{url_for('buy')}}">
+        <img src="{{url_for('static', filename='images/personal1.jpg')}}" alt="Personal Care Product 2">
+        <span>Buy Now</span>
+      </a>
+      <form action="{{url_for('add_to_cart')}}" method="POST">
+        <input type="hidden" name="item_id" value="personal2">
+        <button type="submit">Add to Cart</button>
+      </form>
+    </div>
+    
+    <div class="product-item">
+      <p class="overlay">Specifications</p>
+      <a href="{{url_for('buy')}}">
+        <img src="{{url_for('static', filename='images/personal2.jpg')}}" alt="Personal Care Product 3">
+        <span>Buy Now</span>
+      </a>
+      <form action="{{url_for('add_to_cart')}}" method="POST">
+        <input type="hidden" name="item_id" value="personal3">
+        <button type="submit">Add to Cart</button>
+      </form>
+    </div>
+    
+    <div class="product-item">
+      <p class="overlay">Specifications</p>
+      <a href="{{url_for('buy')}}">
+        <img src="{{url_for('static', filename='images/personal3.jpg')}}" alt="Personal Care Product 4">
+        <span>Buy Now</span>
+      </a>
+      <form action="{{url_for('add_to_cart')}}" method="POST">
+        <input type="hidden" name="item_id" value="personal4">
+        <button type="submit">Add to Cart</button>
+      </form>
+    </div>
+    
+    <div class="product-item">
+      <p class="overlay">Specifications</p>
+      <a href="{{url_for('buy')}}">
+        <img src="{{url_for('static', filename='images/personal4.jpg')}}" alt="Personal Care Product 5">
+        <span>Buy Now</span>
+      </a>
+      <form action="{{url_for('add_to_cart')}}" method="POST">
+        <input type="hidden" name="item_id" value="personal5">
+        <button type="submit">Add to Cart</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

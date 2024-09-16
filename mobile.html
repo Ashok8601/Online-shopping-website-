@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mobile Phones</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='appliances.css')}}">
+</head>
+<body>
+  <div class="appliance">
+    <h5>Mobile Phones</h5>
+
+    <!-- Mobile Phone 1 -->
+    <div class="item">
+      <h6>Mobile Phone Name 1</h6>
+      <p class="overlay">Specifications</p>
+      <a href="{{url_for('buy', item_id=1)}}">
+        <img src="{{url_for('static',filename='images/mobile.jpg')}}" alt="mobile1.jpg">
+        Buy Now
+      </a>
+      <form action="{{url_for('add_to_cart')}}" method="post">
+        <input type="hidden" name="item_id" value="1">
+        <button type="submit">Add to Cart</button>
+      </form>
+    </div>
+
+    <!-- Mobile Phone 2 -->
+    <div class="item">
+      <h6>Mobile Phone Name 2</h6>
+      <p class="overlay">Specifications</p>
+      <a href="{{url_for('buy', item_id=2)}}">
+        <img src="{{url_for('static',filename='images/mobile1.jpg')}}" alt="mobile2.jpg">
+        Buy Now
+      </a>
+      <form action="{{url_for('add_to_cart')}}" method="post">
+        <input type="hidden" name="item_id" value="2">
+        <button type="submit">Add to Cart</button>
+      </form>
+    </div>
+
+    <!-- Mobile Phone 3 -->
+    <div class="item">
+      <h6>Mobile Phone Name 3</h6>
+      <p class="overlay">Specifications</p>
+      <a href="{{url_for('buy', item_id=3)}}">
+        <img src="{{url_for('static',filename='images/mobile2.jpg')}}" alt="mobile3.jpg">
+        Buy Now
+      </a>
+      <form action="{{url_for('add_to_cart')}}" method="post">
+        <input type="hidden" name="item_id" value="3">
+        <button type="submit">Add to Cart</button>
+      </form>
+    </div>
+
+    <!-- Mobile Phone 4 -->
+    <div class="item">
+      <h6>Mobile Phone Name 4</h6>
+      <p class="overlay">Specifications</p>
+      <a href="{{url_for('buy', item_id=4)}}">
+        <img src="{{url_for('static',filename='images/mobile3.jpg')}}" alt="mobile4.jpg">
+        Buy Now
+      </a>
+      <form action="{{url_for('add_to_cart')}}" method="post">
+        <input type="hidden" name="item_id" value="4">
+        <button type="submit">Add to Cart</button>
+      </form>
+    </div>
+
+    <!-- Mobile Phone 5 -->
+    <div class="item">
+      <h6>Mobile Phone Name 5</h6>
+      <p class="overlay">Specifications</p>
+      <a href="{{url_for('buy', item_id=5)}}">
+        <img src="{{url_for('static',filename='images/mobile4.jpg')}}" alt="mobile5">
+        Buy Now
+      </a>
+      <form action="{{url_for('add_to_cart')}}" method="post">
+        <input type="hidden" name="item_id" value="5">
+        <button type="submit">Add to Cart</button>
+      </form>
+    </div>
+
+  </div>
+</body>
+</html>

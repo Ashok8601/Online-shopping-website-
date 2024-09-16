@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online shoping store</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='home.css')}}">
+</head>
+<body>
+    <header>
+      <input type="search" name="search" id="search"placeholder="Search product">
+      <h3><a href="{{url_for('cart')}}">..🛒</a></h3>
+       <p><a href="{{url_for('login')}}" >Login</a></a>&#9787;</p>
+       <img src="{{url_for('static',filename='images/logo.jpg')}}" alt="logoo.png">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <nav>
+            <ul class="menu">
+                <img src="logoo.png" alt="logo">
+                <li><a href="{{url_for('login')}}">Login & Signup</a></li>
+                <li><a href="{{url_for('category')}}">All Categories</a></li>
+               
+                <li><a href="{{url_for('sell')}}">Sell on Flipkart</a></li>
+                <li><a href="{{url_for('order')}}">My Orders</a></li>
+                <li><a href="{{url_for('cart')}}">My Cart</a></li>
+                <li><a href="{{url_for('account')}}">My Account</a></li>
+             
+                <li><a href="{{url_for('help')}}">Help Centre</a></li>
+                <li><a href="{{url_for('legal')}}">Legal</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+      <div class="slider">
+      <div class="slides">
+         <a href="{{url_for('buy')}}"<img src="{{url_for('static', filename='images/photo1.jpg')}}" alt="photo2.jpg"></a>
+        <a href="{{url_for('buy')}}"<img src="{{url_for('static', filename='images/photo2.jpg')}}" alt="photo2.jpg"></a>
+        <a href="{{url_for('buy')}}"><img src="{{url_for('static', filename='images/photo3.jpg')}}" alt="photo3.jpg"></a>
+        <a href="{{url_for('buy')}}"><img src="{{url_for('static', filename='images/photo4.jpg')}}" alt="photo4.jpg"></a>
+        <a href="{{url_for('buy')}}"><img src="{{url_for('static', filename='images/photo5.jpg')}}" alt="photo5.jpg"></a>
+        <a href="{{url_for('buy')}}"><img src="{{url_for('static', filename='images/photo6.jpg')}}" alt="photo6.jpg"></a>
+        </a>
+       </div>
+      </div>
+    </section>
+    <section class="category">
+      <h4>Explore category</h4>
+      <a href="{{url_for('appliances')}}"><img src="{{url_for('static', filename='images/appliances.jpg')}}" alt="appliances"></a>
+            <h1><a href="{{url_for('appliances')}}">appliances</a></h1>
+      <a href="{{url_for('electronic')}}"><img src="{{url_for('static', filename='images/electronic.jpg')}}" alt="photo3.jpg"></a>
+         <h1><a href="{{url_for('electronic')}}">electronic</h1>
+      <a href="{{url_for('mobile')}}"><img src="{{url_for('static', filename='images/mobile.jpg')}}" alt="photo3.jpg"></a>
+            <h1><a href="{{url_for('mobile')}}">mobile</a></h1>
+      <a href="{{url_for('home_decor')}}"><img src="{{url_for('static', filename='images/home.jpg')}}" alt="photo3.jpg"></a>
+            <h1><a href="{{url_for('home_decor')}}">Home</a></h1>
+      <a href="{{url_for('personal')}}"><img src="{{url_for('static', filename='images/personal.jpg')}}" alt="photo3.jpg"></a>
+      <h1><a href="{{url_for('personal')}}">Personal care</a></h1>
+    </section>
+    <footer>
+  <div class="bottom">
+    <ul>
+      <li><a href="{{url_for('services')}}">Our Services</a></li>
+      <li><a href="{{url_for('contact')}}">Contact Us</a></li>
+      <li><a href="{{url_for('sell')}}">Sell with Us</a></li>
+      <li><a href="{{url_for('help')}}">Help</a></li>
+    </ul>
+  </div>
+  <div class="connect">
+    <ul>
+      <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+      <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+      <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+      <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+      <li><a href="https://www.jonkin.com" target="_blank">Jonkin</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>

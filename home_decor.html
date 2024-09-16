@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home Decor</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='appliances.css')}}">
+</head>
+<body>
+  <div class="appliance">
+    <h5>Home Decor</h5>
+
+    <!-- Item 1 -->
+    <div class="item">
+      <p class="overlay">Specifications</p>
+      <a href="{{url_for('buy', item_id=1)}}">
+        <img src="{{url_for('static',filename='images/home.jpg')}}" alt="home decor 1">
+        Buy Now
+      </a>
+      <form action="{{url_for('add_to_cart')}}" method="post">
+        <input type="hidden" name="item_id" value="1">
+        <button type="submit">Add to Cart</button>
+      </form>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="item">
+      <p class="overlay">Specifications</p>
+      <a href="{{url_for('buy', item_id=2)}}">
+        <img src="{{url_for('static',filename='images/home1.jpg')}}" alt="home decor 2">
+        Buy Now
+      </a>
+      <form action="{{url_for('add_to_cart')}}" method="post">
+        <input type="hidden" name="item_id" value="2">
+        <button type="submit">Add to Cart</button>
+      </form>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="item">
+      <p class="overlay">Specifications</p>
+      <a href="{{url_for('buy', item_id=3)}}">
+        <img src="{{url_for('static',filename='images/home2.jpg')}}" alt="home decor 3">
+        Buy Now
+      </a>
+      <form action="{{url_for('add_to_cart')}}" method="post">
+        <input type="hidden" name="item_id" value="3">
+        <button type="submit">Add to Cart</button>
+      </form>
+    </div>
+
+    <!-- Item 4 -->
+    <div class="item">
+      <p class="overlay">Specifications</p>
+      <a href="{{url_for('buy', item_id=4)}}">
+        <img src="{{url_for('static',filename='images/home3.jpg')}}" alt="home decor 4">
+        Buy Now
+      </a>
+      <form action="{{url_for('add_to_cart')}}" method="post">
+        <input type="hidden" name="item_id" value="4">
+        <button type="submit">Add to Cart</button>
+      </form>
+    </div>
+
+    <!-- Item 5 -->
+    <div class="item">
+      <p class="overlay">Specifications</p>
+      <a href="{{url_for('buy', item_id=5)}}">
+        <img src="{{url_for('static',filename='images/home4.jpg')}}" alt="home decor 5">
+        Buy Now
+      </a>
+      <form action="{{url_for('add_to_cart')}}" method="post">
+        <input type="hidden" name="item_id" value="5">
+        <button type="submit">Add to Cart</button>
+      </form>
+    </div>
+
+  </div>
+</body>
+</html>

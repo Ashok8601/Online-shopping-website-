@@ -1,0 +1,38 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Appliances</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='appliances.css')}}">
+</head>
+<body>
+  <div class="appliance">
+    <h5>Air Conditioning</h5>
+    <p class="overlay">Specifications</p>
+    <img src="{{url_for('static', filename='images/appliances.jpg')}}" alt="Air Conditioning">
+    <form action="{{url_for('add_to_cart')}}" method="POST">
+      <input type="hidden" name="item" value="Air Conditioning">
+      <input type="submit" value="Add to Cart">
+    </form>
+
+    <h5>Refrigerator</h5>
+    <p class="overlay">Specifications</p>
+    <img src="{{url_for('static', filename='images/appliances1.jpg')}}" alt="Refrigerator">
+    <form action="{{url_for('add_to_cart')}}" method="POST">
+      <input type="hidden" name="item" value="Refrigerator">
+      <input type="submit" value="Add to Cart">
+    </form>
+
+    <h5>Washing Machine</h5>
+    <p class="overlay">Specifications</p>
+    <img src="{{url_for('static', filename='images/appliances2.jpg')}}" alt="Washing Machine">
+    <form action="{{url_for('add_to_cart')}}" method="POST">
+      <input type="hidden" name="item" value="Washing Machine">
+      <input type="submit" value="Add to Cart">
+    </form>
+
+    <!-- Add more appliances similarly -->
+  </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fashion</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='appliances.css')}}">
+</head>
+<body>
+  <div class="appliance">
+    <h5>Mens and Womens Fashion</h5>
+
+    <div class="product">
+      <p class="overlay">Specifications: Fashion 1</p>
+      <img src="{{url_for('static', filename='images/fassion.jpg')}}" alt="Fashion 1">
+      <!-- Add to cart button -->
+      <form action="{{url_for('add_to_cart')}}" method="POST">
+        <input type="hidden" name="item" value="Fashion 1">
+        <button type="submit">Add to Cart</button>
+      </form>
+    </div>
+
+    <div class="product">
+      <p class="overlay">Specifications: Fashion 2</p>
+      <img src="{{url_for('static', filename='images/fassion1.jpg')}}" alt="Fashion 2">
+      <form action="{{url_for('add_to_cart')}}" method="POST">
+        <input type="hidden" name="item" value="Fashion 2">
+        <button type="submit">Add to Cart</button>
+      </form>
+    </div>
+
+    <div class="product">
+      <p class="overlay">Specifications: Fashion 3</p>
+      <img src="{{url_for('static', filename='images/fassion2.jpg')}}" alt="Fashion 3">
+      <form action="{{url_for('add_to_cart')}}" method="POST">
+        <input type="hidden" name="item" value="Fashion 3">
+        <button type="submit">Add to Cart</button>
+      </form>
+    </div>
+
+    <div class="product">
+      <p class="overlay">Specifications: Fashion 4</p>
+      <img src="{{url_for('static', filename='images/fassion3.jpg')}}" alt="Fashion 4">
+      <form action="{{url_for('add_to_cart')}}" method="POST">
+        <input type="hidden" name="item" value="Fashion 4">
+        <button type="submit">Add to Cart</button>
+      </form>
+    </div>
+
+    <div class="product">
+      <p class="overlay">Specifications: Fashion 5</p>
+      <img src="{{url_for('static', filename='images/fassion4.jpg')}}" alt="Fashion 5">
+      <form action="{{url_for('add_to_cart')}}" method="POST">
+        <input type="hidden" name="item" value="Fashion 5">
+        <button type="submit">Add to Cart</button>
+      </form>
+    </div>
+    
+  </div>
+</body>
+</html>
